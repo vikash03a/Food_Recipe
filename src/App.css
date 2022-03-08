@@ -1,0 +1,158 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+html {
+  font-size: 60%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: monospace;
+  color: #4069b4;
+  text-transform: uppercase;
+  margin: 4rem 0;
+}
+
+.search-form {
+  width: 50rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #76daec;
+  border-radius: 3rem;
+  margin-bottom: 5rem;
+  box-shadow: 1rem 1rem 1rem rgb(208, 209, 209);
+  position: relative;
+}
+
+.alert {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  background-color: rgb(243, 79, 79);
+  width: calc(100% - 0.4rem);
+  border-radius: 3rem;
+  padding: 0.2rem;
+}
+
+.alert h3 {
+  font-size: 2rem;
+  color: rgb(250, 248, 248);
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.search-form input {
+  font-size: 1.6rem;
+  border: none;
+  margin: 0 1rem;
+  border-radius: 2rem;
+  height: 3rem;
+}
+
+.search-form input[type="text"] {
+  padding: 0 1rem;
+  width: 60%;
+  color: #555;
+}
+
+.search-form input[type="submit"] {
+  width: 15%;
+  text-transform: uppercase;
+  background-color: #4ce659;
+  color: rgb(19, 18, 18);
+}
+.search-form input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+.recipes {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.recipe {
+  width: 30rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #3bc904;
+  padding: 2rem;
+  position: relative;
+  border-radius: 5rem;
+  box-shadow: 1rem 1rem 2rem rgb(30, 102, 1);
+}
+
+.recipe h2 {
+  background-color: rgba(6, 34, 158, 0.7);
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  font-size: 2.0rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.recipe img {
+  border-radius: 3rem;
+  object-fit: cover;
+}
+
+.recipe a {
+  font-size: 1.8rem;
+  color: #c20404;
+}
+
+.recipe button {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #4055b4;
+  border: none;
+  border-radius: 3rem;
+  height: 3rem;
+}
+.recipe button:hover{
+    cursor: pointer;
+}
+
+.ingredient-list {
+  margin-top: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.ingredient-list li {
+  margin: 0.5rem 0;
+}
+
+.ingredient-text {
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.ingredient-weight {
+  color: #40b48e;
+  font-size: 1.3rem;
+}
